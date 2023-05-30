@@ -69,6 +69,11 @@ section{
     border-radius: 7px;
 }
 
+.textarea:hover{
+    border: 3px solid;
+    border-color: rgb(68, 119, 230);
+}
+
 .info{
     padding: 10px;
     color: rgb(255, 255, 255);
@@ -89,12 +94,22 @@ section{
     border-radius: 7px;
 }
 
+.mensaje:hover{
+    border: 3px solid;
+    border-color: rgb(68, 119, 230);
+}
+
 .btn-desencriptar{
     padding: 10px;
     border-radius: 10px;
     font-size: 20px;
     line-height: 70%;
     font-family: 'Inter';
+}
+
+.btn-desencriptar:hover{
+    background-color: rgb(53, 126, 235);
+    opacity: 0.70;
 }
 
 .btn-encriptar{
@@ -105,11 +120,22 @@ section{
     font-family: 'Inter';
 }
 
+.btn-encriptar:hover{
+    background-color: rgb(53, 126, 235);
+    opacity: 0.70;
+}
+
 .btn-copiar{
     padding: 10px;
     align-self: center;
     width: 90%;
 }
+
+.copiar:hover{
+    background-color: rgb(53, 126, 235);
+    opacity: 0.70;
+}
+
 
 .copiar{
     padding: 10px;
