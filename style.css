@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
@@ -48,14 +49,14 @@ section{
     flex-direction: column;
     width: 70%;
     height: 100%;
-    border: outset 5px rgb(117, 124, 115);
+    border: outset 3px rgb(117, 124, 115);
     border-radius: 10px;
 }
 
 .der{
     display: flex;
     flex-direction: column;
-    border: outset 5px rgb(117, 124, 115);
+    border: outset 3px rgb(117, 124, 115);
     width: 70%;
     height: 100%;
     border-radius: 10px;
@@ -66,7 +67,6 @@ section{
     margin: 10px;
     font-size: 25px;
     line-height: 70%;
-    font-family: 'Inter';
     border-radius: 7px;
 }
 
@@ -80,13 +80,14 @@ section{
     color: rgb(255, 255, 255);
     font-size: 30px;
     line-height: 70%;
-    font-family: 'Inter';
     align-self: center;
 }
 
 .botones{
     padding: 10px;
     align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .mensaje{
@@ -104,8 +105,7 @@ section{
     padding: 10px;
     border-radius: 10px;
     font-size: 20px;
-    line-height: 70%;
-    font-family: 'Inter';
+    line-height: 50%;
 }
 
 .btn-desencriptar:hover{
@@ -117,8 +117,7 @@ section{
     padding: 10px;
     border-radius: 10px;
     font-size: 20px;
-    line-height: 70%;
-    font-family: 'Inter';
+    line-height: 50%;
 }
 
 .btn-encriptar:hover{
@@ -142,9 +141,9 @@ section{
     padding: 10px;
     border-radius: 10px;
     font-size: 20px;
-    line-height: 70%;
-    font-family: 'Inter';
+    line-height: 50%;
     width: 100%;
+    margin-top: 40px;
 }
 
 .pie{
@@ -158,5 +157,37 @@ section{
 @media (max-width: 900px) {
     main{
         flex-direction: column;
+    }
+}
+
+@media (max-width: 615px) {
+    main{
+        flex-direction: column;
+    }
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .info{
+        font-size: 25px;
+        margin: 10px;
+    }
+    .textarea{
+        font-size: 15px;
+        margin: 10px;
+    }
+    .botones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 30%;
+        width: 100%;
+    }
+    .btn-encriptar{
+        margin-bottom: 10px;
+    }
+    .btn-copiar{
+        width: 100%;
+        height: 30%;
     }
 }
